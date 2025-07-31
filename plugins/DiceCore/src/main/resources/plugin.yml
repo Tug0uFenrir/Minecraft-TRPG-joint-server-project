@@ -1,0 +1,10 @@
+name: DiceCore
+version: '1.0-SNAPSHOT'
+main: org.MTJSP.diceCore.DicePlugin
+api-version: '1.20'
+authors: [ Tug0uFenr4r ]
+description: 服务器的骰子核心系统
+commands:
+  r:
+    description: 投掷骰子
+    usage: /r <骰子表达式>
