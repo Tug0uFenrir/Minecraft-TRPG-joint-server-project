@@ -1,0 +1,14 @@
+name: DiceCitizensAddon
+version: 1.0
+main: org.MTJSP.diceCitizens.DiceCitizensPlugin
+api-version: '1.20'
+depend: [Citizens, DiceCore]
+softdepend: []
+
+commands:
+  dicebehavior:
+    description: 为NPC添加骰子行为
+    usage: /dicebehavior <骰值|骰值范围|global> <类型> <目标> [冷却] <行为>
+  dicereload:
+    description: 重新加载配置
+    usage: /dicereload

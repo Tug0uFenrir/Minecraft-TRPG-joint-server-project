@@ -37,7 +37,7 @@ public class DiceExpressionParser {
     }
 
     private double evaluateMathExpression(String expression) {
-        // 将表达式转换为后缀表达式（逆波兰表示法）
+        // 将表达式转换为后缀表达式
         List<String> tokens = tokenizeExpression(expression);
         List<String> rpn = infixToRPN(tokens);
         return evaluateRPN(rpn);

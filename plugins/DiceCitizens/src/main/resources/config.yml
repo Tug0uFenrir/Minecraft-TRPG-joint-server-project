@@ -1,0 +1,39 @@
+# Citizens骰子行为控制配置
+
+# 全局行为 - 对所有NPC生效
+global-behaviors:
+  behavior1:
+    dice-range: "1-3"
+    type: "message"
+    target: "player"
+    action: "§c运气不太好，掷出了{dice}点"
+  behavior2:
+    dice-range: "18-20"
+    type: "message"
+    target: "player"
+    action: "§a运气爆棚！掷出了{dice}点"
+  behavior3:
+    dice-value: 1
+    type: "sound"
+    target: "npc"
+    action: "entity.villager.no:1:0.5"
+
+# NPC特定行为
+npcs:
+  123: # NPC ID
+    behavior1:
+      dice-value: 20
+      type: "command"
+      target: "console"
+      action: "effect give {player} minecraft:glowing 30"
+    behavior2:
+      dice-range: "10-15"
+      type: "animation"
+      target: "npc"
+      action: "cheer"
+  456: # 另一个NPC
+    behavior1:
+      dice-value: 1
+      type: "message"
+      target: "npc"
+      action: "§4哈哈哈，{player}你掷出了1点！太倒霉了！"
