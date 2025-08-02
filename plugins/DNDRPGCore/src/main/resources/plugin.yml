@@ -1,6 +1,6 @@
 name: DNDRPGCore
-version: '1.0-SNAPSHOT'
-main: org.MTJSP.dNDRPGCore.DNDRPGCore
+version: '0.0.1-OnDev'
+main: org.MTJSP.dNDRPGCore.RPGPlugin
 api-version: '1.20'
 authors: [ Tug0uFenr4r ]
 description: RPG核心功能，包括车卡、六维属性值，提供关于特定职业的数值调整配置文件

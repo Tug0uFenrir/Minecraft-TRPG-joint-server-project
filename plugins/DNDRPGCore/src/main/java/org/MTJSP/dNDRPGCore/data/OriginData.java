@@ -22,4 +22,8 @@ public class OriginData {
     public String getClassName() {
         return null;
     }
+
+    public String getId() {
+        return null;
+    }
 }

@@ -119,7 +119,7 @@ public class ConfigManager {
                 result.put(origin.getId(), origin);
             }
         }
-        return result;
+        return null;
     }
 
     // Getters
